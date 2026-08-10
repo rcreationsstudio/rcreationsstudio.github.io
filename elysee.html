@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Élysée | Cinematic Fragrance Campaign – R Creations Studio</title>
+    <meta name="description" content="Explore Élysée, a cinematic fragrance campaign crafted through elegant storytelling, refined branding, and premium visual direction.">
+
+<meta name="author" content="R Creations Studio">
+
+<meta name="robots" content="index, follow">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+   <div class="logo">
+    <a href="index.html">
+        <img src="images/logo/logo.png" alt="R Creations Studio">
+    </a>
+</div>
+    <button class="menu-toggle" style="display: none;">
+    ☰
+</button>
+
+    <nav>
+
+        <ul class="nav-links mobile-menu">
+
+            <li><a href="index.html">Home</a></li>
+
+<li><a href="index.html#projects">Projects</a></li>
+
+<li><a href="index.html#services">Services</a></li>
+
+<li><a href="index.html#about">About</a></li>
+
+<li><a href="index.html#contact">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<section class="project-hero"
+style="background-image:url('images/elysee/hero.png');">
+
+    <div class="project-overlay"></div>
+
+    <div class="project-hero-content">
+
+        <span class="small-title">
+            Featured Project
+        </span>
+
+        <h1>
+            Élysée
+        </h1>
+
+        <p>
+            Luxury fragrance concept crafted through cinematic storytelling,
+            premium branding, and elegant visual direction.
+        </p>
+
+        <div class="scroll-indicator">
+            ↓ Scroll
+        </div>
+
+    </div>
+
+</section>
+<!-- ========= ÉLYSÉE STORY ========= -->
+
+<section class="project-story">
+
+    <div class="story-inner">
+
+        <span class="small-title">
+            The Story
+        </span>
+
+        <h2>
+            A fragrance inspired by
+            timeless Parisian elegance.
+        </h2>
+
+        <p>
+            Élysée explores the feeling of luxury through
+            cinematic storytelling, refined composition,
+            and an atmosphere designed to evoke emotion.
+            Every detail was crafted to represent
+            elegance, sophistication, and timeless beauty.
+        </p>
+
+    </div>
+
+    </section>
+
+<!-- ========= ÉLYSÉE FILM ========= -->
+
+<section class="project-film">
+
+    <div class="film-header">
+
+        <span class="small-title">
+            The Film
+        </span>
+
+        <h2>
+            A cinematic fragrance experience.
+        </h2>
+
+    </div>
+
+
+    <div class="film-wrapper">
+
+        <video controls poster="images/elysee/hero.png">
+
+            <source 
+            src="videos/elysee/elysee-video.mp4" 
+            type="video/mp4">
+
+        </video>
+
+    </div>
+
+</section>
+<!-- ========= CREATIVE DIRECTION ========= -->
+
+<section class="creative-direction">
+
+    <div class="creative-header">
+
+        <span class="small-title">
+            Creative Direction
+        </span>
+
+        <h2>
+            Building a world around
+            timeless luxury.
+        </h2>
+
+    </div>
+
+
+    <div class="creative-grid">
+
+
+        <div class="creative-item">
+
+            <h3>
+                Concept
+            </h3>
+
+            <p>
+                Élysée was imagined as a luxury fragrance
+                experience inspired by elegance,
+                emotion, and timeless beauty.
+            </p>
+
+        </div>
+
+
+        <div class="creative-item">
+
+            <h3>
+                Visual Language
+            </h3>
+
+            <p>
+                Warm lighting, refined compositions,
+                and cinematic storytelling create
+                a sophisticated brand atmosphere.
+            </p>
+
+        </div>
+
+
+        <div class="creative-item">
+
+            <h3>
+                Production
+            </h3>
+
+            <p>
+                AI-assisted visuals combined with
+                creative direction and storytelling
+                bring the concept to life.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+<!-- ==========================================
+     VISUAL COLLECTION
+========================================== -->
+
+<section class="visual-gallery">
+
+    <div class="gallery-header">
+
+        <span>Visual Collection</span>
+
+    </div>
+
+    <div class="gallery-track">
+
+    <div class="gallery-card active">
+        <img src="images/elysee/elysee-01.png" alt="">
+    </div>
+
+    <div class="gallery-card">
+        <img src="images/elysee/elysee-02.png" alt="">
+    </div>
+
+    <div class="gallery-card">
+        <img src="images/elysee/elysee-03.png" alt="">
+    </div>
+
+    <div class="gallery-card">
+        <img src="images/elysee/elysee-04.png" alt="">
+    </div>
+
+    <div class="gallery-card">
+        <img src="images/elysee/elysee-05.png" alt="">
+    </div>
+
+</div>
+
+</section>
+<script>
+
+const galleryTrack = document.querySelector(".gallery-track");
+
+if (galleryTrack) {
+
+    const galleryCards =
+        document.querySelectorAll(".gallery-card");
+
+    let currentCard = 0;
+
+
+    /* =========================
+       CENTER ACTIVE CARD
+    ========================= */
+
+    function showCard(index) {
+
+        galleryCards.forEach(card => {
+            card.classList.remove("active");
+        });
+
+        galleryCards[index].classList.add("active");
+
+        galleryTrack.scrollTo({
+    left: galleryCards[index].offsetLeft
+        - (galleryTrack.offsetWidth - galleryCards[index].offsetWidth) / 2,
+    behavior: "smooth"
+});
+
+    }
+
+
+    /* =========================
+       AUTOMATIC CAROUSEL
+    ========================= */
+
+    showCard(currentCard);
+
+    setInterval(() => {
+
+        currentCard++;
+
+        if (currentCard >= galleryCards.length) {
+            currentCard = 0;
+        }
+
+        showCard(currentCard);
+
+    }, 4500);
+
+
+    /* =========================
+       IMAGE LIGHTBOX
+    ========================= */
+
+    const lightbox = document.createElement("div");
+
+    lightbox.className = "image-lightbox";
+
+    lightbox.innerHTML = `
+        <button class="lightbox-close" aria-label="Close">
+            ×
+        </button>
+
+        <img src="" alt="">
+    `;
+
+    document.body.appendChild(lightbox);
+
+
+    const lightboxImage =
+        lightbox.querySelector("img");
+
+    const closeButton =
+        lightbox.querySelector(".lightbox-close");
+
+
+    galleryCards.forEach(card => {
+
+        card.addEventListener("click", () => {
+
+            const image =
+                card.querySelector("img");
+
+            lightboxImage.src = image.src;
+            lightboxImage.alt = image.alt;
+
+            lightbox.classList.add("open");
+
+        });
+
+    });
+
+
+    closeButton.addEventListener("click", () => {
+
+        lightbox.classList.remove("open");
+
+    });
+
+
+    lightbox.addEventListener("click", (event) => {
+
+        if (event.target === lightbox) {
+
+            lightbox.classList.remove("open");
+
+        }
+
+    });
+
+
+    document.addEventListener("keydown", (event) => {
+
+        if (event.key === "Escape") {
+
+            lightbox.classList.remove("open");
+
+        }
+
+    });
+
+}
+
+</script>
+
+<!-- =========================
+     MORE PROJECTS
+========================= -->
+
+<section class="more-projects">
+
+    <div class="curve-line"></div>
+
+    <h2>More Projects</h2>
+<div class="more-grid">
+
+    <a href="solara.html" class="more-card">
+
+        <img src="images/solara/poster.png" alt="Solara">
+
+        <h3>Solara</h3>
+
+    </a>
+
+    <a href="noira.html" class="more-card">
+
+        <img src="images/noira/poster.png" alt="Noira">
+
+        <h3>Noira</h3>
+
+    </a>
+
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     FINAL CTA
+========================================== -->
+
+<section class="project-cta">
+
+    <div class="cta-content">
+
+        <span class="small-title">
+            Let's Create
+        </span>
+
+        <h2>
+            Ready to build your own brand story?
+        </h2>
+
+        <p>
+            Every unforgettable brand begins with a bold idea.
+            Let's create a cinematic world that people remember.
+        </p>
+
+        <a href="index.html#contact" class="btn-primary">
+    Start a Project
+</a>
+
+    </div>
+
+</section>
+<script>
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+    });
+});
+
+</script>
+
+
+</body>
+
+</html>
