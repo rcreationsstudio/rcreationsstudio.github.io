@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nova Heights – R Creations Studio</title>
+    <meta name="description" content="Explore Nova Heights, a real-estate concept crafted through cinematic storytelling, refined visual direction, and immersive architectural imagery.">
+
+<meta name="author" content="R Creations Studio">
+
+<meta name="robots" content="index, follow">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+   <div class="logo">
+    <a href="index.html">
+        <img src="images/logo/logo.png" alt="R Creations Studio">
+    </a>
+</div>
+    <button class="menu-toggle" style="display: none;">
+    ☰
+</button>
+
+    <nav>
+
+        <ul class="nav-links mobile-menu">
+
+            <li><a href="index.html">Home</a></li>
+
+<li><a href="index.html#projects">Projects</a></li>
+
+<li><a href="index.html#services">Services</a></li>
+
+<li><a href="index.html#about">About</a></li>
+
+<li><a href="index.html#contact">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<section class="project-hero"
+style="background-image:url('images/nova-heights/hero.png');">
+
+    <div class="project-overlay"></div>
+
+    <div class="project-hero-content">
+
+        <span class="small-title">
+            Featured Project
+        </span>
+
+        <h1>
+           Nova Heights
+        </h1>
+
+        <p>
+            A real-estate concept crafted through cinematic storytelling,
+    refined visual direction, and immersive architectural imagery.
+        </p>
+
+        <div class="scroll-indicator">
+            ↓ Scroll
+        </div>
+
+    </div>
+
+</section>
+<!-- ========= NOVA HEIGHTS STORY ========= -->
+
+<section class="project-story">
+
+    <div class="story-inner">
+
+        <span class="small-title">
+            The Poject
+        </span>
+
+        <h2>
+    A vision of refined living,
+    shaped through architectural storytelling.
+</h2>
+
+        <p>
+    Nova Heights explores the experience of contemporary living through
+    cinematic storytelling, refined composition, and immersive architectural
+    imagery. Every scene was crafted to convey comfort, connection, and
+    the feeling of coming home.
+</p>
+
+    </div>
+
+    </section>
+
+<!-- ========= NOVA HEIGHTS FILM ========= -->
+
+<section class="project-film">
+
+    <div class="film-header">
+
+        <span class="small-title">
+            The Film
+        </span>
+
+       <h2>
+    A cinematic vision of modern living.
+</h2>
+
+    </div>
+
+
+    <div class="film-wrapper">
+
+        <video controls poster="images/nova-heights/video-poster.png">
+
+            <source 
+            src="videos/Nova-Heights/nova-heights-video.mp4" 
+            type="video/mp4">
+
+        </video>
+
+    </div>
+
+</section>
+<!-- ========= CREATIVE DIRECTION ========= -->
+
+<section class="creative-direction">
+
+    <div class="creative-header">
+
+        <span class="small-title">
+            Creative Direction
+        </span>
+
+        <h2>
+             From concept to
+    final execution.
+        </h2>
+
+    </div>
+
+
+    <div class="creative-grid">
+
+
+        <div class="creative-item">
+
+            <h3>
+                Concept
+            </h3>
+
+            <p>
+               Nova Heights was imagined as a cinematic vision of
+    contemporary living, focusing on comfort, atmosphere,
+    and the feeling of coming home.
+            </p>
+
+        </div>
+
+
+        <div class="creative-item">
+
+            <h3>
+                Visual Language
+            </h3>
+
+            <p>
+               Cinematic framing, natural light, architectural
+    compositions, and calm visual transitions create
+    a sense of space, comfort, and refined living.
+            </p>
+
+        </div>
+
+
+        <div class="creative-item">
+
+            <h3>
+                Production
+            </h3>
+
+            <p>
+                AI-assisted imagery, cinematic editing, voiceover,
+    and sound design were combined to bring the
+    Nova Heights concept to life.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+<!-- ==========================================
+     VISUAL COLLECTION
+========================================== -->
+
+<section class="visual-gallery">
+
+    <div class="gallery-header">
+
+        <span>Visual Collection</span>
+
+    </div>
+
+    <div class="gallery-track">
+
+    <div class="gallery-card active">
+        <img src="images/nova-heights/nova-01.png" alt="Nova Heights">
+    </div>
+
+    <div class="gallery-card">
+        <img src="images/nova-heights/nova-02.png" alt="Nova Heights">
+    </div>
+
+    <div class="gallery-card">
+        <img src="images/nova-heights/nova-03.png" alt="Nova Heights">
+    </div>
+
+    <div class="gallery-card">
+        <img src="images/nova-heights/nova-04.png" alt="Nova Heights">
+    </div>
+
+    <div class="gallery-card">
+        <img src="images/nova-heights/nova-05.png" alt="Nova Heights">
+    </div>
+
+     <div class="gallery-card">
+        <img src="images//nova-heights/nova-06.png" alt="Nova Heights">
+    </div>
+
+</div>
+
+</section>
+<script>
+
+const galleryTrack = document.querySelector(".gallery-track");
+
+if (galleryTrack) {
+
+    const galleryCards =
+        document.querySelectorAll(".gallery-card");
+
+    let currentCard = 0;
+
+
+    /* =========================
+       CENTER ACTIVE CARD
+    ========================= */
+
+    function showCard(index) {
+
+        galleryCards.forEach(card => {
+            card.classList.remove("active");
+        });
+
+        galleryCards[index].classList.add("active");
+
+        galleryTrack.scrollTo({
+    left: galleryCards[index].offsetLeft
+        - (galleryTrack.offsetWidth - galleryCards[index].offsetWidth) / 2,
+    behavior: "smooth"
+});
+
+    }
+
+
+    /* =========================
+       AUTOMATIC CAROUSEL
+    ========================= */
+
+    showCard(currentCard);
+
+    setInterval(() => {
+
+        currentCard++;
+
+        if (currentCard >= galleryCards.length) {
+            currentCard = 0;
+        }
+
+        showCard(currentCard);
+
+    }, 4500);
+
+
+    /* =========================
+       IMAGE LIGHTBOX
+    ========================= */
+
+    const lightbox = document.createElement("div");
+
+    lightbox.className = "image-lightbox";
+
+    lightbox.innerHTML = `
+        <button class="lightbox-close" aria-label="Close">
+            ×
+        </button>
+
+        <img src="" alt="">
+    `;
+
+    document.body.appendChild(lightbox);
+
+
+    const lightboxImage =
+        lightbox.querySelector("img");
+
+    const closeButton =
+        lightbox.querySelector(".lightbox-close");
+
+
+    galleryCards.forEach(card => {
+
+        card.addEventListener("click", () => {
+
+            const image =
+                card.querySelector("img");
+
+            lightboxImage.src = image.src;
+            lightboxImage.alt = image.alt;
+
+            lightbox.classList.add("open");
+
+        });
+
+    });
+
+
+    closeButton.addEventListener("click", () => {
+
+        lightbox.classList.remove("open");
+
+    });
+
+
+    lightbox.addEventListener("click", (event) => {
+
+        if (event.target === lightbox) {
+
+            lightbox.classList.remove("open");
+
+        }
+
+    });
+
+
+    document.addEventListener("keydown", (event) => {
+
+        if (event.key === "Escape") {
+
+            lightbox.classList.remove("open");
+
+        }
+
+    });
+
+}
+
+</script>
+
+<!-- =========================
+     MORE PROJECTS
+========================= -->
+
+<section class="more-projects">
+
+    <div class="curve-line"></div>
+
+    <h2>More Projects</h2>
+<div class="more-grid">
+
+    <a href="solara.html" class="more-card">
+
+        <img src="images/solara/poster.png" alt="Solara">
+
+        <h3>Solara</h3>
+
+    </a>
+
+    <a href="noira.html" class="more-card">
+
+        <img src="images/noira/poster.png" alt="Noira">
+
+        <h3>Noira</h3>
+
+    </a>
+
+    <a href="elysee.html" class="more-card">
+
+    <img src="images/elysee-paris.png" alt="Élysée">
+
+    <h3>Élysée</h3>
+
+</a>
+
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     FINAL CTA
+========================================== -->
+
+<section class="project-cta">
+
+    <div class="cta-content">
+
+        <span class="small-title">
+            Let's Create
+        </span>
+
+        <h2>
+            Ready to build your own brand story?
+        </h2>
+
+        <p>
+            Every unforgettable brand begins with a bold idea.
+            Let's create a cinematic world that people remember.
+        </p>
+
+        <a href="index.html#contact" class="btn-primary">
+    Start a Project
+</a>
+
+    </div>
+
+</section>
+<script>
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+    });
+});
+
+</script>
+
+
+</body>
+
+</html>
