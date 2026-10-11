@@ -2353,3 +2353,74 @@ body::before{
         display: block !important;
     }
 }
+
+
+/* CCENT visual collection */
+.ccent-gallery .gallery-card {
+    height: auto;
+    aspect-ratio: 9 / 16;
+    overflow: hidden;
+}
+
+.ccent-gallery .gallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+
+/* CCENT video sizing only */
+.ccent-film-wrapper {
+    max-width: 420px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ccent-film-wrapper video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 28px;
+}
+
+/* VANTOR visual collection — prevent image cropping */
+.vantor-gallery .gallery-card {
+    height: auto;
+    aspect-ratio: 9 / 16;
+    overflow: hidden;
+}
+
+.vantor-gallery .gallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+/* NOIRA visual collection — prevent image cropping */
+.noira-gallery .gallery-card {
+    height: auto;
+    aspect-ratio: 9 / 16;
+    overflow: hidden;
+}
+
+.noira-gallery .gallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+/* SOLARA visual collection — prevent image cropping */
+.solara-gallery .gallery-card {
+height: auto;
+aspect-ratio: 9 / 16;
+overflow: hidden;
+}
+
+.solara-gallery .gallery-card img {
+width: 100%;
+height: 100%;
+object-fit: contain;
+display: block;
+}
